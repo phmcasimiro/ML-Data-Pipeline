@@ -18,7 +18,7 @@ def carregar_dados(caminho_arquivo):
     # TODO 1: Use pd.read_csv() para carregar o arquivo
     # Dica: df = pd.read_csv(caminho_arquivo)
     
-    df = None  # Substitua None pelo código correto
+    df = pd.read_csv(caminho_arquivo)
     
     return df
 
@@ -37,14 +37,17 @@ def explorar_dados(df):
     # TODO 2: Mostre o shape do DataFrame (linhas, colunas)
     # Dica: print(f"Shape: {df.shape}")
     
+    print(f"Shape: {df.shape}")
     
     # TODO 3: Mostre os tipos de cada coluna
     # Dica: print(df.dtypes)
-    
+    print("\nTipos de Colunas:")
+    print(df.dtypes)
     
     # TODO 4: Mostre as 5 primeiras linhas
     # Dica: print(df.head())
-    
+    print("\nPrimeiras 5 Linhas:")
+    print(df.head())
     
     print("=" * 50)
 
@@ -63,10 +66,13 @@ def verificar_target(df, coluna_target='respondeu_campanha'):
     # TODO 5: Mostre a contagem de cada valor do target
     # Dica: print(df[coluna_target].value_counts())
     
+    print("Contagem de Valores que responderam a campanha:")
+    print(df[coluna_target].value_counts()) 
     
     # TODO 6: Mostre a proporção (percentual) de cada valor
     # Dica: print(df[coluna_target].value_counts(normalize=True))
-    
+    print("\nProporção de Valores que responderam a campanha:")
+    print((df[coluna_target].value_counts(normalize=True) * 100).round(2).astype(str) + '%')  
     
     print("-" * 30)
 

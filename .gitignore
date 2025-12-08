@@ -8,8 +8,8 @@ env/
 venv/
 .venv/
 
-# Modelos (opcional manter)
-# models/*.pkl
+# Modelos 
+models/*.pkl
 
 # IDE
 .idea/
@@ -23,3 +23,4 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
+

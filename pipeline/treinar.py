@@ -145,3 +145,5 @@ if __name__ == "__main__":
                 print("ERRO: Complete os TODOs 4 e 5!")
             else:
                 salvar_modelo(modelo)
+
+# Fim do script de treinamento

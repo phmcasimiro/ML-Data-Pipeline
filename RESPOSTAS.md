@@ -15,8 +15,8 @@
 
 ### 1.1 O pipeline executou sem erros?
 <!-- Marque com X a opção correta -->
-- [ ] Sim
-- [X] Não
+- [X] Sim
+- [ ] Não
 
 ### 1.2 F1-Score obtido:
 <!-- Copie o valor exibido ao final da execução -->

@@ -172,7 +172,17 @@ A validação de dados antes do treinamento é fundamental para garantir a quali
 ### 4.1 Liste os commits que vocês fizeram (copie do git log):
 <!-- Execute: git log --oneline e cole aqui -->
 ```
-(cole o output do git log aqui)
+743d909 (origin/main, origin/HEAD) Atualiza respostas e corrige caminho de dados no treino
+24003e8 Merge pull request #5 from phmcasimiro/feature/ajuste-main-pipeline
+0ab9ea0 (origin/feature/ajuste-main-pipeline) Ajusta fluxo do main.py e finalização do pipeline
+9e26582 Merge pull request #4 from phmcasimiro/feat/casimiro/validar.py
+e41d565 (origin/feat/casimiro/validar.py) commit casimiro validar.py
+33064c3 Merge pull request #2 from phmcasimiro/feature-treinamento
+a698744 (origin/feature-treinamento) Conclusão do treinar.py com ajustes de caminho
+ffddd63 Implementa treinamento RandomForest e regras de ignorar modelos
+052858f Merge pull request #1 from phmcasimiro/carregamento_dados
+839bb0d (origin/carregamento_dados) Realizando o carregamento dos dados do arquivo csv
+3c4c6f6 feat/casimiro/Commit inicial do projeto de avaliação da disciplina de Pipeline de dados
 ```
 
 ### 4.2 Por que mensagens de commit descritivas são importantes?

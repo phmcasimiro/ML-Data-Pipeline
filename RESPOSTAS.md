@@ -3,10 +3,11 @@
 ## Identificação do Grupo
 
 - **Integrantes:**
-  1. Nome: Micael
-  2. Nome: Daniel
-  3. Nome: Pedro G
-  4. Nome: Casimiro
+1. Micael Macedo Pereira da Trindade
+2. Pedro Henrique de Magalhães Casimiro
+3. Daniel Barrozo Lima
+4. Pedro Guilherme Feitoza Melo
+5. Bruno Sampaio
 
 ---
 
@@ -14,8 +15,8 @@
 
 ### 1.1 O pipeline executou sem erros?
 <!-- Marque com X a opção correta -->
-- [X] Sim
-- [ ] Não
+- [ ] Sim
+- [X] Não
 
 ### 1.2 F1-Score obtido:
 <!-- Copie o valor exibido ao final da execução -->
@@ -153,11 +154,11 @@ Utilizamos o F1-Score porque ele considera simultaneamente precisão e recall, s
 ### 3.1 Liste as validações Pandera que você implementou:
 <!-- Descreva cada validação que você adicionou -->
 
-1. cliente_id:
-2. idade:
-3. renda_mensal:
-4. score_credito:
-5. respondeu_campanha:
+1. cliente_id: o id do cliente não pode ser nulo por se tratar de um campo chave, e deve ser um número inteiro, único.
+2. idade: por se tratar de tempo em anos, deve ser número inteiro e, negocialmente, deve estar entre 0 e 80.
+3. renda_mensal: deve ser decimal (float), por se tratar de moeda, e, negocialmente, estar entre 1000 e 50000.
+4. score_credito: negocialmente, deve estar entre 300 e 850 e, por ser valor quebrado, deve ser do tipo float.
+5. respondeu_campanha: nesse campo, precisa-se saber apenas se a campanha foi ou não respóndida, bastando ser true ou false, 0 ou 1 nesse caso.
 
 ### 3.2 Por que validar dados ANTES de treinar o modelo?
 <!-- Pense no contexto de produção: o que aconteceria se dados inválidos entrassem no modelo? -->
@@ -177,7 +178,7 @@ A validação de dados antes do treinamento é fundamental para garantir a quali
 ### 4.2 Por que mensagens de commit descritivas são importantes?
 <!-- Pense: se outra pessoa olhar o histórico, vai entender o que foi feito? -->
 
-
+Essas mensagens são compartilhadas com todo o time de desenvolvimento, sendo que deve ser orientadora, clara e concisa para que outro desenvolvedor possa ler e entender de antemão o que a alteração em questão implementou, reduzindo assim o retrabalho e facilitando a manutenção. 
 
 ---
 
@@ -185,12 +186,12 @@ A validação de dados antes do treinamento é fundamental para garantir a quali
 
 ### 5.1 Qual foi a maior dificuldade do grupo?
 
-
+Alinhar as etapas de implementações e commits entre os membros da equipe.
 
 ### 5.2 O que vocês fariam diferente se fossem refazer?
 
-
+O primeiro commit seria feito em conjunto, em uma reunião, explicando os detalhes e necessidades.
 
 ---
 
-**Data de entrega:** ___/___/______
+**Data de entrega:** 16/12/2025
